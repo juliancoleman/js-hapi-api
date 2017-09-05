@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon -e js -i node_modules -i index.js",
-    "knex": "knex --knexfile=./config/Knexfile.js"
+    "knex": "knex --knexfile=./config/Knexfile.js",
+    "test": "echo 'boop'"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
