@@ -1,0 +1,47 @@
+{
+  "name": "js-hapi-api",
+  "version": "0.0.1",
+  "description": "A Hapi API written in JS",
+  "main": "index.js",
+  "repository": "https://github.com/juliancoleman/js-hapi-api.git",
+  "author": "Julian Coleman",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon -e js -i node_modules -i index.js",
+    "knex": "knex --knexfile=./config/Knexfile.js"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.1.0",
+    "nodemon": "^1.12.0"
+  },
+  "dependencies": {
+    "@videoamp/hapi-route-autoloader": "^1.0.1",
+    "apprequire": "^1.0.1",
+    "bcrypt": "^1.0.3",
+    "bluebird": "^3.5.0",
+    "bookshelf": "^0.10.4",
+    "bookshelf-json-columns": "^2.1.1",
+    "bookshelf-paranoia": "^0.11.0",
+    "dotenv": "^4.0.0",
+    "good": "^7.3.0",
+    "good-console": "^6.4.0",
+    "good-squeeze": "^5.0.2",
+    "hapi": "^16.5.2",
+    "hapi-auth-jwt2": "^7.3.0",
+    "hapi-boom-decorators": "^3.0.0",
+    "joi": "^10.6.0",
+    "jsonwebtoken": "^7.4.3",
+    "knex": "^0.13.0",
+    "pg": "^7.3.0",
+    "ramda": "^0.24.1",
+    "require-all": "^2.2.0",
+    "underscore.string": "^3.3.4",
+    "unhandled-rejection": "^1.0.0",
+    "util": "^0.10.3"
+  }
+}
