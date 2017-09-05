@@ -1,7 +1,7 @@
 const Service = appRequire("lib/users/service");
 const Validator = appRequire("lib/users/delete/validator");
 
-const { respondCustomError } = appRequire("helpers/respnses");
+const { respondCustomError } = appRequire("helpers/responses");
 
 const UserNotFoundError = appRequire("lib/users/errors/user_not_found_error");
 

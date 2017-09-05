@@ -1,5 +1,5 @@
 const Service = appRequire("lib/authentication/service");
-const Validator = appRequire("lib/sessions/refresh/validator");
+const Validator = appRequire("lib/sessions/refresh/post/validator");
 
 const { respondCustomError } = appRequire("helpers/responses");
 

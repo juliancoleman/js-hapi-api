@@ -19,7 +19,7 @@ server.connection({
 module.exports = server.registerAsync([
   require("hapi-boom-decorators"),
   require("hapi-auth-jwt2"),
-  require("@videoamp/hapi-route-autoloader")("controllers/"),
+  require("@videoamp/hapi-route-autoloader")(`${__dirname}/controllers`),
   appRequire("config/good"),
 ])
 .then((err) => {
