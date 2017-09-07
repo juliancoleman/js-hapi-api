@@ -6,7 +6,7 @@ The `js-hapi-api` is the most standardized Hapi API to date. While this repo is 
 
 ## How is this the most _standardized_ Hapi API to date?
 
-I'm glad you asked. First of all, I can't begin to describe how this one API has changed the game for me in the tech industry. Not only does the code adopt the most recent features of [Node 8.2.1](https://nodejs.org), but everything I know about API structure, routing, `stateless tokens`, writing and running unit tests, setting up `Continuous Integration (CI)`, and a plethora of other learning expieriences that just looking at the code, I know _you_, the reader, could appreciate, I've learned from building this API alone. There is just far too much to learn from this API that could make you invaluable to the company God made no mistake in placing you in.
+I'm glad you asked. First of all, I can't begin to describe how this one API has changed the game for me in the tech industry. Not only does the code adopt the most recent features of [Node 8.2.1](https://nodejs.org), but everything I know about API structure, routing, `stateless tokens`, writing and running unit tests, setting up `Continuous Integration (CI)`, and a plethora of other learning expieriences that just looking at the code, I know _you_, the reader, could appreciate, I've learned from building this API alone. There is just far too much to learn from this API that could make you invaluable to the company God made no mistake in placing you in. Second of all, the amount of tests I've written to make sure this product is what it says it is, is downright ridiculous. I've tested every endpoint, every endpoint controller, and every endpoint's service and validator. This goes to show one thing and one thing only.
 
 #### I don't settle for crap code.
 
