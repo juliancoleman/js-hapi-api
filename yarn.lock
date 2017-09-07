@@ -266,10 +266,6 @@ bookshelf-bcrypt@^2.1.0:
     lodash.get "^4.3.0"
     lodash.merge "^4.4.0"
 
-bookshelf-json-columns@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/bookshelf-json-columns/-/bookshelf-json-columns-2.1.1.tgz#0c104e4f6b3c42edf7615fa96b8786e9977e79f8"
-
 bookshelf-paranoia@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/bookshelf-paranoia/-/bookshelf-paranoia-0.11.0.tgz#bdacd6ddfdaa2e65a47dde547e30570f0785f712"

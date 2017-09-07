@@ -8,10 +8,10 @@ numberTypes.forEach(type => pg.types.setTypeParser(type, "text", parseFloat));
 module.exports = {
   client: "postgresql",
   connection: {
-    host: process.env.DB_HOST,
+    host: process.env.DATABASE_HOST,
     user: process.env.DATABASE_POSTGRESQL_USERNAME,
     password: process.env.DATABASE_POSTGRESQL_PASSWORD,
-    database: process.env.DB_NAME,
+    database: process.env.DATABASE_NAME,
   },
   migrations: {
     directory: "../migrations",
