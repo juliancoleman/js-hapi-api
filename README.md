@@ -2,7 +2,7 @@
 
 [![Build Status](https://semaphoreci.com/api/v1/juliancoleman/js-hapi-api/branches/master/badge.svg)](https://semaphoreci.com/juliancoleman/js-hapi-api)
 
-The `js-hapi-api` is the most standardized Hapi API to date. While this repo is a bit young, this project and all its efforts are well over two years old, based on an old concept by [@jadengore](https://github.com/jadengore) for an old project for a public curation of recipes (without the typical suck of your average ad-filled application).
+The `js-hapi-api` is the most standardized Hapi API to date. While this repo is a bit young, this project and all its efforts are well over two years old, based on an old concept by [@jadengore](https://github.com/jadengore) for an old project for a public curation of recipes (without the typical suck of your average ad-filled application). Out of the box, this API sports endpoints for users CRUD, as well as user authentication using JWTs.
 
 # Setup
 
