@@ -3,7 +3,7 @@ module.exports = (() => {
   const knex = require("knex")(knexfile);
   const jsonColumns = require("bookshelf-json-columns");
   const bookshelfParanoia = require("bookshelf-paranoia");
-  const bookshelfBcrypt = require("bookshelf-bcrypt")({ rounds: 12 });
+  const bookshelfBcrypt = require("bookshelf-bcrypt");
   const bookshelf = require("bookshelf")(knex);
 
   bookshelf.plugin("registry");
@@ -12,7 +12,7 @@ module.exports = (() => {
   bookshelf.plugin("pagination");
   bookshelf.plugin(jsonColumns);
   bookshelf.plugin(bookshelfParanoia);
-  bookshelf.plugin(bookshelfBcrypt);
+  bookshelf.plugin(bookshelfBcrypt, { rounds: 12 });
 
   return bookshelf;
 })();

@@ -2,7 +2,7 @@ exports.up = knex =>
   knex.schema.createTable("users", (table) => {
     table.increments();
     table.string("email_address");
-    table.string("encrypted_password");
+    table.string("password");
     table.timestamps();
     table.timestamp("deleted_at");
   });
