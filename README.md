@@ -44,7 +44,7 @@ Just make sure your `.env` file reflects your Postgres setup.
 
 #### Docs
 
-All the docs for the present functionality are contained within the `wiki`, which can be found at project root. I would recommend reading up on these to get an idea on _how to interact with the API, and example payloads_.
+All the docs for the present functionality are contained within the `wiki`. I would recommend reading up on these to get an idea on _how to interact with the API, and example payloads_.
 
 ## Testing
 
