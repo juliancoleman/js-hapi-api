@@ -28,9 +28,9 @@
   "dependencies": {
     "@videoamp/hapi-route-autoloader": "^1.0.1",
     "apprequire": "^1.0.1",
-    "bcrypt": "^1.0.3",
     "bluebird": "^3.5.0",
     "bookshelf": "^0.10.4",
+    "bookshelf-bcrypt": "^2.1.0",
     "bookshelf-json-columns": "^2.1.1",
     "bookshelf-paranoia": "^0.11.0",
     "dotenv": "^4.0.0",
