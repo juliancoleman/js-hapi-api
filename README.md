@@ -44,7 +44,7 @@ Just make sure your `.env` file reflects your Postgres setup.
 
 #### Docs
 
-All the docs for the present functionality are contained within the `docs/` directory, which can be found at project root. I would recommend reading up on these to get an idea on _how to interact with the API, and example payloads_.
+All the docs for the present functionality are contained within the `wiki`, which can be found at project root. I would recommend reading up on these to get an idea on _how to interact with the API, and example payloads_.
 
 ## Testing
 
@@ -92,4 +92,4 @@ If any of the tests should fail, please make sure your `.env` and database are s
 
 # Final comments
 
-Now that wasn't too bad of a read, was it? By now, you're probably wondering how the heck to actually use this API as boilerplate code. From here, I'll go ahead and point you to the `docs/` directory (folder). The JS Hapi API was designed to have an incredibly simple setup. Extending the application is a courageous endeavor. Godspeed, homie.
+Now that wasn't too bad of a read, was it? By now, you're probably wondering how the heck to actually use this API as boilerplate code. From here, I'll go ahead and point you to the `repo wiki`. The JS Hapi API was designed to have an incredibly simple setup. Extending the application is a courageous endeavor. Godspeed, homie.
