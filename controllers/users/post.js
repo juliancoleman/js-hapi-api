@@ -2,7 +2,6 @@ const Service = appRequire("lib/users/service");
 const Validator = appRequire("lib/users/post/validator");
 
 const { respondCustomError } = appRequire("helpers/responses");
-
 const UserAlreadyExistsError = appRequire("lib/users/errors/user_already_exists_error");
 
 const post = ({ payload }, reply) => {

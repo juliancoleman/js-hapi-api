@@ -1,8 +1,7 @@
 const Service = appRequire("lib/users/service");
-
 const { singularValidator, pluralValidator } = appRequire("lib/users/get/validator");
-const { respondCustomError } = appRequire("helpers/responses");
 
+const { respondCustomError } = appRequire("helpers/responses");
 const UserNotFoundError = appRequire("lib/users/errors/user_not_found_error");
 
 const getUser = ({ params }, reply) => {

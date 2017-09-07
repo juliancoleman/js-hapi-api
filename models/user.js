@@ -8,7 +8,7 @@ const UserNotFoundError = appRequire("lib/users/errors/user_not_found_error");
 
 module.exports = Bookshelf.model("User", BaseModel.extend({
   hidden: ["encryptedPassword"],
-  tableName: "user",
+  tableName: "users",
   customError: UserNotFoundError,
 
   initialize(...args) {

@@ -1,5 +1,5 @@
 exports.up = knex =>
-  knex.schema.createTable("user", (table) => {
+  knex.schema.createTable("users", (table) => {
     table.increments();
     table.string("email_address");
     table.string("encrypted_password");
@@ -8,4 +8,4 @@ exports.up = knex =>
   });
 
 exports.down = knex =>
-  knex.schema.dropTable("user");
+  knex.schema.dropTable("users");
