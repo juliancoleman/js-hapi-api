@@ -4,20 +4,6 @@
 
 The `js-hapi-api` is the most standardized Hapi API to date. While this repo is a bit young, this project and all its efforts are well over two years old, based on an old concept by [@jadengore](https://github.com/jadengore) for an old project for a public curation of recipes (without the typical suck of your average ad-filled application).
 
-## How is this the most _standardized_ Hapi API to date?
-
-I'm glad you asked. First of all, I can't begin to describe how this one API has changed the game for me in the tech industry. Not only does the code adopt the most recent features of [Node 8.2.1](https://nodejs.org), but everything I know about API structure, routing, `stateless tokens`, writing and running unit tests, setting up `Continuous Integration (CI)`, and a plethora of other learning expieriences that just looking at the code, I know _you_, the reader, could appreciate, I've learned from building this API alone. There is just far too much to learn from this API that could make you invaluable to the company God made no mistake in placing you in. Second of all, the amount of tests I've written to make sure this product is what it says it is, is downright ridiculous. I've tested every endpoint, every endpoint controller, and every endpoint's service and validator. This goes to show one thing and one thing only.
-
-#### I don't settle for crap code.
-
-> __*"Sugar packet? That’s what’s wrong with this country Eric. Nobody wants to roll up their sleeves and work. They’re all looking for their sugar packet solution. Well, not me. I’m getting a saw!"*__ -- _Red Forman (That 70's Show)_
-
-I pride myself as a well-rounded software engineer, with most of my experience being in JavaScript (Node and web), and Python. I've worked in plenty-a-companies that failed to do the most important things, such as: using a _damn_ linter, having a _damn_ company-wide set of standards, setting _damn_ expectations on their employees and engineers, and practicing what they _gaht-damn_ preach. Not only this, but I often found myself asking the question: __*do I even actually work here?*__ And while my project managers were either never present, or had even been able to identify what _good code_ looks like, it just placed a big strain on my heart. The tech industry has to change, especially in California. I'm sick of people looking for their "sugar packet solutions". [@jadengore](https://github.com/jadengore) and I would call that `immoral software`.
-
-## Your point?
-
-Well, now that I've just explained the birth of the universe in this README, the point I'm trying to make is that my heart is to encourage engineers. The key to being a good engineer is to teach 10 other engineers to be twice as good at their jobs. I believe I can accomplish it with this API. This API is two years of research and learning, no brakes used (queue Donald Trump Pepe meme). To help you get started, I've provided an extensive list of docs that you'll want to read should you decide to use this API. It is guaranteed to work out of the box (`.env` batteries not included). The proof is in that gorgeous `Semaphore CI` badge at the top of the README.
-
 # Setup
 
 #### yarn
