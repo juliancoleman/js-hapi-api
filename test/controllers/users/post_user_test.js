@@ -16,19 +16,21 @@ const validPayload = {
 
 describe("POST /api/v1/users", () => {
   context("A valid payload", () => {
-    it("should return code 201", function* () {
-      const response = yield makeRequest(validPayload);
+    it("should return code 201", async () => {
+      const response = await makeRequest(validPayload);
+      const { statusCode } = response;
 
-      expect(response.statusCode).to.equal(201);
+      expect(statusCode).to.equal(201);
     });
   });
 
   context("An invalid payload", () => {
-    it("should return an error code 400", function* () {
+    it("should return an error code 400", async () => {
       const payload = R.merge(validPayload, { email_address: "not a valid email address" });
-      const response = yield makeRequest(payload);
+      const response = await makeRequest(payload);
+      const { statusCode } = response;
 
-      expect(response.statusCode).to.equal(400);
+      expect(statusCode).to.equal(400);
     });
   });
 });
