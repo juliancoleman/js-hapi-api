@@ -1,7 +1,7 @@
 const Joi = require("joi");
 const R = require("ramda");
 
-const Validator = appRequire("lib/sessions/post/validator");
+const Validator = appRequire("lib/sessions/refresh/post/validator");
 
 describe("PostRefreshSessionValidator", () => {
   context("Test not written", () => {
