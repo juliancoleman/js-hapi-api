@@ -3,6 +3,9 @@ const string = require("underscore.string");
 
 const Bookshelf = appRequire("config/bookshelf");
 
+const BookshelfProto = Bookshelf.Model.prototype;
+const { fetch, destroy } = BookshelfProto;
+
 const mapKeys = R.curry((fn, obj) =>
   R.fromPairs(R.map(R.adjust(fn, 0), R.toPairs(obj))));
 
@@ -29,10 +32,10 @@ module.exports = Bookshelf.Model.extend({
   format: attrs => mapKeys(string.underscored, attrs),
 
   fetch(options) {
-    return Bookshelf.Model.prototype.fetch.call(this, R.merge(defaultOptions, options));
+    return fetch.call(this, R.merge(defaultOptions, options));
   },
 
   destroy(options) {
-    return Bookshelf.Model.prototype.destroy.call(this, R.merge(defaultOptions, options));
+    return destroy.call(this, R.merge(defaultOptions, options));
   },
 });
