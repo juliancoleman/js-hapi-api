@@ -4,7 +4,7 @@ const string = require("underscore.string");
 const Bookshelf = appRequire("config/bookshelf");
 
 const BookshelfProto = Bookshelf.Model.prototype;
-const { fetch, destroy } = BookshelfProto;
+const { fetch, destroy, initialize } = BookshelfProto;
 
 const mapKeys = R.curry((fn, obj) =>
   R.fromPairs(R.map(R.adjust(fn, 0), R.toPairs(obj))));
@@ -22,7 +22,7 @@ module.exports = Bookshelf.Model.extend({
       this.constructor.NoRowsDeletedError = this.customError;
     }
 
-    return Bookshelf.Model.prototype.initialize.apply(this, args);
+    return initialize.apply(this, args);
   },
 
   // convert snake_case to camelCase
