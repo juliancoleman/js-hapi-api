@@ -9,7 +9,8 @@
   "scripts": {
     "start": "nodemon -e js -i node_modules -i index.js",
     "knex": "knex --knexfile=./config/Knexfile.js",
-    "test": "mocha --globals testApp,chai test/boot.js \"test/**/*_test.js\""
+    "test": "mocha --globals testApp,chai test/boot.js \"test/**/*_test.js\"",
+    "coverage": "istanbul cover --report lcov _mocha"
   },
   "devDependencies": {
     "chai": "^4.1.2",
@@ -22,6 +23,7 @@
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-mocha": "^4.11.0",
     "eslint-plugin-react": "^7.1.0",
+    "istanbul": "^0.4.5",
     "knex-cleaner": "^1.1.3",
     "mocha": "^3.5.0",
     "nodemon": "^1.12.0"
@@ -43,6 +45,7 @@
     "joi": "^11.0.3",
     "jsonwebtoken": "^8.0.1",
     "knex": "^0.13.0",
+    "lcov-parse": "^1.0.0",
     "pg": "^7.3.0",
     "ramda": "^0.24.1",
     "ramda-adjunct": "^1.14.0",
