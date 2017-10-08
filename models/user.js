@@ -1,25 +1,27 @@
-const BaseModel = require("./base");
+const Password = require("objection-password")();
+const Base = require("./base");
 
-const Bookshelf = appRequire("config/bookshelf");
-const UserNotFoundError = appRequire("lib/users/errors/user_not_found_error");
+const { QueryBuilder } = appRequire("config/objection");
 
-module.exports = Bookshelf.model("User", BaseModel.extend({
-  bcrypt: { field: "password" },
-  tableName: "users",
-  customError: UserNotFoundError,
+module.exports = class User extends Password(Base) {
+  static get tableName() {
+    return "users";
+  }
 
-  // authorize(user) {
-  //   const accessibleBananaIds = Bookshelf.knex
-  //     .select("id")
-  //     .from("")
-  //     .innerJoin("", "")
-  //     .innerJoin("user", "")
-  //     .where("user.id", user.get("id"));
-  //     // deleted_at checks needed as well
+  static get QueryBuilder() {
+    return class extends QueryBuilder {
+      authorize(user) {
+        const getAccessibleBananaIds = builder => builder
+          .select("id")
+          .from("")
+          .innerJoin("", "")
+          .innerJoin("user", "")
+          .where("user.id", user.get("id"));
+          // deleted_at checks needed as well
 
-  //   return this.query((qb) => {
-  //     qb.where(this.attributes);
-  //     qb.andWhere("id", "IN", accessibleBananaIds);
-  //   });
-  // },
-}));
+        return this.query()
+          .where("id", "IN", getAccessibleBananaIds);
+      }
+    };
+  }
+};
