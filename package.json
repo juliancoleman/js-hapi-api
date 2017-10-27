@@ -4,8 +4,8 @@
   "description": "A Hapi API written in JS",
   "main": "index.js",
   "repository": "https://github.com/juliancoleman/js-hapi-api.git",
-  "author": "Julian Coleman",
-  "license": "MIT",
+  "author": "Julian Coleman <julcol03@gmail.com>",
+  "license": "Apache-2.0",
   "scripts": {
     "start": "nodemon -e js -i node_modules -i index.js",
     "knex": "knex --knexfile=./config/Knexfile.js",
