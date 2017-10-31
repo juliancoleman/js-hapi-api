@@ -1,8 +1,13 @@
 # JS Hapi API
 
+
 [![Build Status](https://semaphoreci.com/api/v1/juliancoleman/js-hapi-api/branches/master/badge.svg)](https://semaphoreci.com/juliancoleman/js-hapi-api)
+
 [![Code Climate](https://codeclimate.com/github/juliancoleman/js-hapi-api/badges/gpa.svg)](https://codeclimate.com/github/juliancoleman/js-hapi-api)
+[![Issue Count](https://codeclimate.com/github/juliancoleman/js-hapi-api/badges/issue_count.svg)](https://codeclimate.com/github/juliancoleman/js-hapi-api)
 [![Test Coverage](https://codeclimate.com/github/juliancoleman/js-hapi-api/badges/coverage.svg)](https://codeclimate.com/github/juliancoleman/js-hapi-api/coverage)
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bb0a23cddd0e4e50a62a5c67d8c7f6d0)](https://www.codacy.com/app/jlcoleman3/js-hapi-api?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=juliancoleman/js-hapi-api&amp;utm_campaign=Badge_Grade)
 
 The `js-hapi-api` is the most standardized Hapi API to date. While this repo is a bit young, this project and all its efforts are well over two years old, based on an old concept by [@jadengore](https://github.com/jadengore) for a project for a public curation of recipes (without the typical suck of your average ad-filled application). Out of the box, this API sports endpoints for users CRUD, as well as user authentication using JWTs.
 
